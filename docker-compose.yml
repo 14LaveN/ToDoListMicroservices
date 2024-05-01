@@ -1,0 +1,6 @@
+﻿services:
+  todolistmicroservices.task.api:
+    image: todolistmicroservices.task.api
+    build:
+      context: .
+      dockerfile: ToDoListMicroservices.Task.Api/Dockerfile
