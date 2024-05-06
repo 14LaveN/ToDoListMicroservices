@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ToDoListMicroservices.Task.Contracts/1.0.0": {
+        "runtime": {
+          "ToDoListMicroservices.Task.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ToDoListMicroservices.Task.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

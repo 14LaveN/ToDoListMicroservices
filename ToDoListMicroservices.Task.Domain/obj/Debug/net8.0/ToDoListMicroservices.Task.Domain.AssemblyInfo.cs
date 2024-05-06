@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ToDoListMicroservices.Task.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ToDoListMicroservices.TaskEntity.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("ToDoListMicroservices.Task.Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ToDoListMicroservices.Task.Domain")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ec4de538ca8fed14ff41f7ba047bf06d7f6024a")]
+[assembly: System.Reflection.AssemblyProductAttribute("ToDoListMicroservices.TaskEntity.Domain")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ToDoListMicroservices.TaskEntity.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

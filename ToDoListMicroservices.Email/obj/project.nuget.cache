@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "0VDrF/Vx3qOGxsdJtibe7XjFH5kYbQiFPbUeWn3XjcUR0MicwPobVRbk358C9lwxidv104sWGxbfSxLK3eFkVg==",
+  "dgSpecHash": "9uhOWRCtJyoZ/MXtuxIOkbFYR6j3T7LzZDAMEdPUeHLXJwyUymKozh/JCaSkQyd3qf4ZzRb6gVJwprYIhWPySA==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\ToDoListMicroservices\\ToDoListMicroservices.Email\\ToDoListMicroservices.Email.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0\\bouncycastle.cryptography.2.3.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\mailkit\\4.5.0\\mailkit.4.5.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\mimekit\\4.5.0\\mimekit.4.5.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.formats.asn1\\8.0.0\\system.formats.asn1.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0\\system.security.cryptography.pkcs.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

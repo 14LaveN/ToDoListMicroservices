@@ -1,6 +1,53 @@
 ﻿services:
   todolistmicroservices.task.api:
-    image: todolistmicroservices.task.api
+    image: ${DOCKER_REGISTRY-}todolistmicroservicestaskapi
+    container_name: todolistmicroservices.task.api
     build:
       context: .
       dockerfile: ToDoListMicroservices.Task.Api/Dockerfile
+    cpus: 1
+    mem_limit: "0.5G"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    ports:
+      - 5000:8080
+      - 5001:8081
+    networks:
+        - proxybackend
+      
+  todolistmicroservices.gateway:
+    image: ${DOCKER_REGISTRY-}todolistmicroservices.gateway
+    container_name: todolistmicroservices.gateway
+    build:
+      context: .
+      dockerfile: ToDoListMicroservices.GateWay/Dockerfile
+    cpus: 1
+    mem_limit: "0.5G"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    ports:
+      - 3000:8080
+      - 3001:8081
+    networks:
+      - proxybackend
+
+  todolistmicroservices.identity.api:
+    image: ${DOCKER_REGISTRY-}todolistmicroservicesidentityapi
+    container_name: todolistmicroservices.identity.api
+    build:
+      context: .
+      dockerfile: ToDoListMicroservices.Identity.Api/Dockerfile
+    cpus: 1
+    mem_limit: "0.5G"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    ports:
+      - 7000:8080
+      - 7001:8081
+    networks:
+      - proxybackend
+      
+networks:
+  proxybackend:
+    name: proxybackend
+    driver: bridge

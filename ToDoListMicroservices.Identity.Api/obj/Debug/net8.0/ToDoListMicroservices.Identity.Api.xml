@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToDoListMicroservices.Identity.Api</name>
+    </assembly>
+    <members>
+        <member name="M:ToDoListMicroservices.Identity.Api.Common.DependencyInjection.DiAuthorization.AddAuthorizationExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Common.DependencyInjection.DiCaching.AddCaching(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Common.DependencyInjection.DiDatabase.AddDatabase(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Common.DependencyInjection.DiLogging.AddLoggingExtension(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>The same service collection.</returns>
+        </member>
+        <member name="T:ToDoListMicroservices.Identity.Api.Controllers.V1.UsersController">
+            <summary>
+            Represents the users controller class.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Controllers.V1.UsersController.#ctor(MediatR.ISender,ToDoListMicroservices.Identity.Database.Data.Interfaces.IUserRepository)">
+            <summary>
+            Represents the users controller class.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="userRepository">The user repository.</param>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Controllers.V1.UsersController.Login(ToDoListMicroservices.Identity.Contracts.Login.LoginRequest)">
+            <summary>
+            Login user.
+            </summary>
+            <param name="request">The <see cref="T:Microsoft.AspNetCore.Identity.Data.LoginRequest"/> class.</param>
+            <returns>Base information about login user method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Controllers.V1.UsersController.Register(ToDoListMicroservices.Identity.Contracts.Register.RegisterRequest)">
+            <summary>
+            Register user.
+            </summary>
+            <param name="request">The <see cref="T:Microsoft.AspNetCore.Identity.Data.RegisterRequest"/> class.</param>
+            <returns>Base information about register user method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="401">Unauthorized.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Controllers.V1.UsersController.ChangePassword(System.String)">
+            <summary>
+            Change password from user.
+            </summary>
+            <param name="password">The password.</param>
+            <returns>Base information about change password from user method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Controllers.V1.UsersController.ChangeName(ToDoListMicroservices.Identity.Contracts.ChangeName.ChangeNameRequest)">
+            <summary>
+            Change name from user.
+            </summary>
+            <param name="request">The request.</param>
+            <returns>Base information about change name from user method.</returns>
+            <remarks>
+            Example request:
+            </remarks>
+            <response code="200">OK.</response>
+            <response code="400">Bad request.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="T:ToDoListMicroservices.Identity.Api.RequireScopeHandler">
+            <summary>
+            Represents the require scope authorization handler.
+            </summary>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.RequireScopeHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,ToDoListMicroservices.Identity.Api.ScopeRequirement)">
+            <summary>
+            Handle requirement by authorization handler context.
+            </summary>
+            <param name="context">The Authorization Handler Context.</param>
+            <param name="requirement">The scope requirement.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ToDoListMicroservices.Identity.Api.ScopeRequirement">
+            <summary>
+            Represents the scope requirement record class.
+            </summary>
+            <param name="Issuer">The issuer.</param>
+            <param name="Scope">The scope.</param>
+        </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.ScopeRequirement.#ctor(System.String,System.String)">
+            <summary>
+            Represents the scope requirement record class.
+            </summary>
+            <param name="Issuer">The issuer.</param>
+            <param name="Scope">The scope.</param>
+        </member>
+        <member name="P:ToDoListMicroservices.Identity.Api.ScopeRequirement.Issuer">
+            <summary>
+            Gets issuer.
+            </summary>
+        </member>
+        <member name="P:ToDoListMicroservices.Identity.Api.ScopeRequirement.Scope">
+            <summary>
+            Gets scope.
+            </summary>
+        </member>
+    </members>
+</doc>

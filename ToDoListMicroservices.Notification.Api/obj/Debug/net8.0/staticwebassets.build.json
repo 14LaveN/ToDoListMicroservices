@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yg9GI82fVX65l60EtX6j1JZbO9JPRCXNidNNuFwl/xc=",
+  "Source": "ToDoListMicroservices.Notification.Api",
+  "BasePath": "_content/ToDoListMicroservices.Notification.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

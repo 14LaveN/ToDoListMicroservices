@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zNNI6+aVBAzlRDncAMZ7JQVH30l9f8jHaDqo0TlmzcdJZ4tAzwW5WUdJ9D/NGacS8C5odj1uNuSf3LU5YHeQNQ==",
+  "dgSpecHash": "MIpjrwDYdjaucsuaCWl1shSDIcPy/98NASH4lnhOyiOa0GX4Ntony+UQiwJWKE0qQSgafo4xPfhZH259DVumLw==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\ToDoListMicroservices\\ToDoListMicroservices.Cache\\ToDoListMicroservices.Cache.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

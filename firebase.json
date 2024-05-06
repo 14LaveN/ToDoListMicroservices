@@ -1,0 +1,94 @@
+{
+  "type": "service_account",
+  "project_id": "todolistmicroservices",
+  "private_key_id": "9cc8d3149b8d38cf2e9bdc3f77b31d9d6d13d607",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDaJbRi56wz+G1y\nK2d2eA0SDcfS3iRs5YkbLdSU5uRxpLkSJLaXIUUzVIQlvTr/Af7/UGU54bVDHN5E\nqwyAhmrb9Q+axAXXhWTytTTENfuT3GGiCNi7xYf2k3NYUeOXf50NwwCaLK71rYRd\nT99qOaqez5EvumZJBGXfCDjO5/wPhp7PHfzsE601I6eimGL6u1+wEHa0Ef7aEiS3\n/gqmtEvYx5n1eJCfcc6jBNV2SkxEmgJN/pkRXjOlfX/inhWxwLjwt1ikAPfUxgMn\nZPofcTyHOHhUlBMrupZk0X0jndlU8j6tY4IRivT7NU5Vix6Dl7LB4qDTKiQBzrhU\nkK3prlIhAgMBAAECggEAB4Zw8k99Gn7ZoaxbIZRTGRoWGFFW7tW9NM2QLYHIhB4T\nT0uqa8y3QyXJeDbOo/DY78xBba16UAIdLb+7yuw4H/XUb7mO3QgqOxAirZkSIF/k\nE0+cUF/oSIp+GmAayoVZsNmW+fqMH4f4jrJ8acDrAJb28m9K635mGDtDoGmSwaNK\nJc4YE5N0ydCPJ4HpjS5xbJammbcdPe+FZpUm6WjzXSAHFo50N0qguC316bSE9lZV\ntKxaAINns/XR/GGvf1KwX1Aktt8AYuhjW2/AsIWoPbbjtkTD7NHZrkJEPYrk+pYK\nltIc8lIM2JX55G1R1lNAFOSvF2ZnHYIJDL24KIh+BQKBgQDsdb/oTQZwqNzrYzgf\nHFqiZr+VrvvjiN1uNZMR+oHcMjMbaU73mtLw23C2ursU9LtlTMeNo/1Iq14ZSm4w\nrTwaPX5zzMSqwWx0L8k4VlzqyFGnfK1Rmuq4pingJx15G0ayvWo4bbAg/t7g2FWF\nPIgLJDfvrsj+cVSATd4TggVyhQKBgQDsLI4T+q9Sbbg6+vH3QN29pp1SGhiEkKxz\ndidtIS+oveQMHLuV7s/XCRgPB9UB7+VnEygT2bM3bVajWfjujo+U7uVvcN+Wb1oY\nOuMNtTlC5d5cFA+c1soXUDLAwzA66nys0eoyZ9400Oc0D4s7gErcHPivfZxW6toC\nt4sCjdwp7QKBgQDFIeGtHFILKGyNfTlzjmLtU7XTZ3+uERNx5w5Ghc8vsVY0OxZP\njO7hSEDuxjxj2yhD6r/PEPF/XQblFM1KnZIm2i+LASLQrNLrBk++PRnXzstsU5/3\nEa0v5a+xpUqIBbpqF0nv41pcF7/eOd0KaA2PJFHR66i7n+Xv1XsYTmSWNQKBgG7V\nqgeuScEBRMhJJGzIwEdUfdgd7wunaYb2GCKaxGcIVpFompAOdvOPjP7gyhISpzHs\nR46pR/XnFhWrD6vEs5VNV9covYU31KwyVoQEXE8M2YGU2I7eLhEqzeaws12y1be0\n+5eULy/SKe7ArLLLzlXmMr8Iz+nqZU2JHW+ha4UxAoGBAM9Srwuneysmyn9fsQ6J\nomuP+emoyHEmnfsOpjahEQ+bv/TYjIC9mObKi3udfIZuP9iF9N3/sgfivuD2d0y6\nDnQC8B2/3FKTry4HjseiWFpH3uJLM4w+USBmgrqRHvqZj92b+1ioKZBc7M1aWqaZ\nuCHJElyDyEgu8Sezs7UGTnyc\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-o21gs@todolistmicroservices.iam.gserviceaccount.com",
+  "client_id": "106170872499403916635",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-o21gs%40todolistmicroservices.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com",
+  
+  "apiKey": "AIzaSyBIkzpLn3MbuoTWXhRszQezQNPEwuv8GC0",
+  "authDomain": "todolistmicroservices.firebaseapp.com",
+  "projectId": "todolistmicroservices",
+  "storageBucket": "todolistmicroservices.appspot.com",
+  "messagingSenderId": "679005808617",
+  "appId": "1:679005808617:web:b4d37670c22641a5f54d78",
+  "measurementId": "G-4QF7X31P8S",
+  
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "functions": {
+      "port": 5001
+    },
+    "firestore": {
+      "port": 8080
+    },
+    "database": {
+      "port": 9000
+    },
+    "hosting": {
+      "port": 5000
+    },
+    "pubsub": {
+      "port": 8085
+    },
+    "storage": {
+      "port": 9199
+    },
+    "eventarc": {
+      "port": 9299
+    },
+    "dataconnect": {
+      "port": 9399,
+      "localConnectionString": "postgresql://localhost:5432"
+    },
+    "ui": {
+      "enabled": false
+    },
+    "singleProjectMode": true
+  },
+  "remoteconfig": {
+    "template": "remoteconfig.template.json"
+  },
+  "extensions": {}
+}

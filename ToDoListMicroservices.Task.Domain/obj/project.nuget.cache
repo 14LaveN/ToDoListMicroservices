@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "uycpLu1/yYG57gQare/2yH/E5SSWWX5KVpyjjOKu8nP2A3WnrTAB/QOBgH2hp1iAYNyKrZrRE835ZonKeRzI+Q==",
+  "dgSpecHash": "GtOejr7jjWe3eUp7jBdX7LVx3S0Z34+y0aehDd8J/HL7W+j7onQelAUY6y8iBSF0sJF2aDciZrG9IOOLMXeHHQ==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\ToDoListMicroservices\\ToDoListMicroservices.Task.Domain\\ToDoListMicroservices.Task.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.4\\microsoft.aspnetcore.cryptography.internal.8.0.4.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.4\\microsoft.aspnetcore.cryptography.keyderivation.8.0.4.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.identity.core\\8.0.4\\microsoft.extensions.identity.core.8.0.4.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.identity.stores\\8.0.4\\microsoft.extensions.identity.stores.8.0.4.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

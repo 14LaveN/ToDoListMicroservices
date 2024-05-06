@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ToDoListMicroservices.Task.Api.props" />
+</Project>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cfqTX528ESEB+kmJZ8Y3Ig9CKURX/yPig8KbIxdNsNvFxm5jHublME0casboAVsPTyYlScGABEzfCQy5bybmww==",
+  "success": true,
+  "projectFilePath": "G:\\DotNetProjects\\ToDoListMicroservices\\ToDoListMicroservices.GateWay\\ToDoListMicroservices.GateWay.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\system.io.hashing\\7.0.0\\system.io.hashing.7.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\yarp.reverseproxy\\2.1.0\\yarp.reverseproxy.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,13 @@
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\bin\Debug\net8.0\ToDoListMicroservices.Email.deps.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\bin\Debug\net8.0\ToDoListMicroservices.Email.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\bin\Debug\net8.0\ToDoListMicroservices.Email.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.csproj.AssemblyReference.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.AssemblyInfoInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.AssemblyInfo.cs
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.sourcelink.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\refint\ToDoListMicroservices.Email.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ToDoListMicroservices.Email.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Email\obj\Debug\net8.0\ref\ToDoListMicroservices.Email.dll

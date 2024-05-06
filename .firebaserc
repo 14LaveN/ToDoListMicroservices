@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "todolistmicroservices"
+  },
+  "dataconnectEmulatorConfig": {
+    "postgres": {
+      "localConnectionString": {
+        "localConnectionString": "postgresql://localhost:5432"
+      }
+    }
+  }
+}

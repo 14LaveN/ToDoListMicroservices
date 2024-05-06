@@ -6,4 +6,17 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ToDoListMicroservices.Application\ToDoListMicroservices.Application.csproj" />
+      <ProjectReference Include="..\ToDoListMicroservices.Identity.Contracts\ToDoListMicroservices.Identity.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Core\Settings\" />
+    </ItemGroup>
+
 </Project>

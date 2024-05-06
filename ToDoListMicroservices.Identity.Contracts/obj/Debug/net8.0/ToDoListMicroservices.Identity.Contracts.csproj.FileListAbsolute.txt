@@ -1,0 +1,12 @@
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\bin\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.deps.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\bin\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\bin\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.AssemblyInfoInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.AssemblyInfo.cs
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.sourcelink.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\refint\ToDoListMicroservices.Identity.Contracts.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Identity.Contracts.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Contracts\obj\Debug\net8.0\ref\ToDoListMicroservices.Identity.Contracts.dll

@@ -1,0 +1,16 @@
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\bin\Debug\net8.0\ToDoListMicroservices.Identity.Domain.deps.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\bin\Debug\net8.0\ToDoListMicroservices.Identity.Domain.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\bin\Debug\net8.0\ToDoListMicroservices.Identity.Domain.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\bin\Debug\net8.0\ToDoListMicroservices.Domain.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\bin\Debug\net8.0\ToDoListMicroservices.Domain.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.csproj.AssemblyReference.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.AssemblyInfoInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.AssemblyInfo.cs
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.sourcelink.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.csproj.CopyComplete
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\refint\ToDoListMicroservices.Identity.Domain.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ToDoListMicroservices.Identity.Domain.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Identity.Domain\obj\Debug\net8.0\ref\ToDoListMicroservices.Identity.Domain.dll

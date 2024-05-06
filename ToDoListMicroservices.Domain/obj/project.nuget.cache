@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "BlpLmHCwwHhDwt002rixYQ0o048SXuri9VNRoHn1S5wbPfYivoj5hd+JtP8UGPJJxJMvuj1rPM0/dxItMHIAKA==",
+  "dgSpecHash": "RjrOdtxBfn1SMjmI1VZaPjjElwPAeXZuSMSKoK+HnwFwfB+IjB5x019E/UTHIMNN2LcjNPiILi4+MPhpLZSUfg==",
   "success": true,
   "projectFilePath": "G:\\DotNetProjects\\ToDoListMicroservices\\ToDoListMicroservices.Domain\\ToDoListMicroservices.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ponom\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\mongodb.bson\\2.25.0\\mongodb.bson.2.25.0.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\ponom\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -6,4 +6,15 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ToDoListMicroservices.Application\ToDoListMicroservices.Application.csproj" />
+      <ProjectReference Include="..\ToDoListMicroservices.Domain\ToDoListMicroservices.Domain.csproj" />
+      <ProjectReference Include="..\ToDoListMicroservices.Identity.Domain\ToDoListMicroservices.Identity.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="8.0.1" />
+      <PackageReference Include="RabbitMQ.Client" Version="7.0.0-alpha.5" />
+    </ItemGroup>
+
 </Project>

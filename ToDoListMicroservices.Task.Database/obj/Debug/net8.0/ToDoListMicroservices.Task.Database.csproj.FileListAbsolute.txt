@@ -1,0 +1,12 @@
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\bin\Debug\net8.0\ToDoListMicroservices.Task.Database.deps.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\bin\Debug\net8.0\ToDoListMicroservices.Task.Database.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\bin\Debug\net8.0\ToDoListMicroservices.Task.Database.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ToDoListMicroservices.Task.Database.GeneratedMSBuildEditorConfig.editorconfig
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ToDoListMicroservices.Task.Database.AssemblyInfoInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ToDoListMicroservices.Task.Database.AssemblyInfo.cs
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ToDoListMicroservices.Task.Database.csproj.CoreCompileInputs.cache
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ToDoListMicroservices.Task.Database.sourcelink.json
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ToDoListMicroservices.Task.Database.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\refint\ToDoListMicroservices.Task.Database.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ToDoListMicroservices.Task.Database.pdb
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Task.Database\obj\Debug\net8.0\ref\ToDoListMicroservices.Task.Database.dll

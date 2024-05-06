@@ -6,4 +6,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="DTO\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ToDoListMicroservices.Domain\ToDoListMicroservices.Domain.csproj" />
+      <ProjectReference Include="..\ToDoListMicroservices.Identity.Domain\ToDoListMicroservices.Identity.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

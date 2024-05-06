@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nn6EXVUJonIx02uLuaQeJyrStEd8W6bBdzWhAzeegkY=",
+  "Source": "ToDoListMicroservices.Identity.Api",
+  "BasePath": "_content/ToDoListMicroservices.Identity.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
