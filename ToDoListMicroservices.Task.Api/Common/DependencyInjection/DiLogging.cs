@@ -28,7 +28,7 @@ public static class DiLogging
                 AutoRegisterTemplate = true,
                 AutoRegisterTemplateVersion = AutoRegisterTemplateVersion.ESv7,
                 IndexFormat = 
-                    $"{Assembly.GetExecutingAssembly().GetName().Name.ToLower().Replace(".","-")}-{DateTime.UtcNow:yyyy-MM}",
+                    $"{Assembly.GetExecutingAssembly().GetName().Name?.ToLower().Replace(".","-")}-{DateTime.UtcNow:yyyy-MM}",
                 NumberOfReplicas = 1,
                 NumberOfShards = 2
             })

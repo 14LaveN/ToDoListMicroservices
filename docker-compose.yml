@@ -46,8 +46,35 @@
       - 7001:8081
     networks:
       - proxybackend
+    
+  prometheus:
+    image: prom/prometheus:latest
+  
+  grafana:
+    image: grafana/grafana:latest
+  
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.9.2
+    
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+    
+  mongodb:
+    image: mongo:latest
+    
+  redis:
+    image: redis:latest
       
 networks:
   proxybackend:
     name: proxybackend
     driver: bridge
+    
+  elastic:
+    driver: bridge
+
+volumes:
+  grafana-storage:
+  elasticsearch-data:
+  redis-data:
+  mongodb_data:

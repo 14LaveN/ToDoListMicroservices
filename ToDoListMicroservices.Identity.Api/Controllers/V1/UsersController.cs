@@ -118,8 +118,8 @@ public sealed class UsersController(
             .Map(changeNameRequest => new ChangeNameCommand(
                 FirstName.Create(changeNameRequest.FirstName).Value,
                 LastName.Create(changeNameRequest.LastName).Value))
-            .Bind(async command => BaseRetryPolicy.Policy.Execute(async () =>
-                await Sender.Send(command)).Result.Data)
+            .Bind(command => System.Threading.Tasks.Task.FromResult(BaseRetryPolicy.Policy.Execute(async () =>
+                await Sender.Send(command)).Result.Data))
             .Match(Ok, BadRequest);
     
     #endregion

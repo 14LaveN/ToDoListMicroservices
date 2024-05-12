@@ -51,8 +51,8 @@ public static class DiAuthorization
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     ValidIssuers = ["https://localhost:7028", configuration["Jwt:ValidIssuers"]],
-                    ValidAudiences = new List<string>(){"https://localhost:7028", configuration["Jwt:ValidAudiences"]},
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Secret"]))
+                    ValidAudiences = new List<string>(){"https://localhost:7028", configuration["Jwt:ValidAudiences"]!},
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Secret"]!))
                 };
                 options.Events = new JwtBearerEvents
                 {
@@ -75,7 +75,7 @@ public static class DiAuthorization
                                 error_description = context.ErrorDescription
                             }));
                         var authenticationException = context.AuthenticateFailure as SecurityTokenExpiredException;
-                        context.Response.Headers.Add("x-token-expired", authenticationException?.Expires.ToString("o"));
+                        context.Response.Headers.Append("x-token-expired", authenticationException?.Expires.ToString("o"));
                         context.ErrorDescription =
                             $"The token expired on {authenticationException?.Expires:o}";
                 

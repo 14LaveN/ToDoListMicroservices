@@ -16,7 +16,8 @@ public class UserRepository(BaseDbContext userDbContext)
 {
     /// <inheritdoc />
     public async Task<Maybe<User>> GetByIdAsync(Guid userId) =>
-            await userDbContext.Set<User>()
+            await userDbContext
+                .Set<User>()
                 .AsNoTracking()
                 .AsSplitQuery()
                 .FirstOrDefaultAsync(x=>x.Id == userId) 
@@ -24,11 +25,15 @@ public class UserRepository(BaseDbContext userDbContext)
 
     /// <inheritdoc />
     public async Task<Maybe<User>> GetByNameAsync(string name) =>
-        await userDbContext.Set<User>().FirstOrDefaultAsync(x=>x.UserName == name) 
+        await userDbContext
+            .Set<User>()
+            .FirstOrDefaultAsync(x=>x.UserName == name) 
         ?? throw new ArgumentNullException();
 
     /// <inheritdoc />
     public async Task<Maybe<User>> GetByEmailAsync(EmailAddress emailAddress) =>
-        await userDbContext.Set<User>().FirstOrDefaultAsync(x=>x.EmailAddress == emailAddress) 
+        await userDbContext
+            .Set<User>()
+            .FirstOrDefaultAsync(x=>x.EmailAddress == emailAddress) 
         ?? throw new ArgumentNullException();
 }

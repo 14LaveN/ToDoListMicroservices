@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "grjGcIn7tjVDyH2A28mS0SsoIY7LZJai3DshJ85D1DY=",
+  "Source": "ToDoListMicroservices.GateWay",
+  "BasePath": "_content/ToDoListMicroservices.GateWay",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

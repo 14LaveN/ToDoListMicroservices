@@ -23,7 +23,7 @@ public sealed class IntegrationEventPublisher(IOptions<MessageBrokerSettings> me
     /// <summary>
     /// Initialize connection.
     /// </summary>
-    /// <returns>Returns connection to RabbitMQ.</returns> 
+    /// <returns>Returns connection to <see cref="RabbitMQ"/>.</returns> 
     private static async Task<IConnection> CreateConnection()
     {
         var connectionFactory = new ConnectionFactory
@@ -50,21 +50,16 @@ public sealed class IntegrationEventPublisher(IOptions<MessageBrokerSettings> me
             exchange: _messageBrokerSettings.QueueName + "Exchange",
             routingKey: _messageBrokerSettings.QueueName);
 
-        IIntegrationEvent concreteIntegrationEvent;
-        switch (integrationEvent.GetType().Name)
+        IIntegrationEvent concreteIntegrationEvent = integrationEvent.GetType().Name switch
         {
-            case nameof(UserCreatedIntegrationEvent):
-                concreteIntegrationEvent = (UserCreatedIntegrationEvent)integrationEvent;
-                break;
-            case nameof(UserPasswordChangedIntegrationEvent):
-                concreteIntegrationEvent = (UserPasswordChangedIntegrationEvent)integrationEvent;
-                break;
-            default:
-                concreteIntegrationEvent = integrationEvent;
-                break;
-        }
+            nameof(UserCreatedIntegrationEvent) =>
+                (UserCreatedIntegrationEvent)integrationEvent,
+            nameof(UserPasswordChangedIntegrationEvent) =>
+                (UserPasswordChangedIntegrationEvent)integrationEvent,
+            _ => integrationEvent
+        };
         
-        string payload = JsonSerializer.Serialize(concreteIntegrationEvent, new JsonSerializerOptions()
+        string payload = JsonSerializer.Serialize(concreteIntegrationEvent, new JsonSerializerOptions
         {
             Converters = { new IntegrationEventJsonConverter() }
         });

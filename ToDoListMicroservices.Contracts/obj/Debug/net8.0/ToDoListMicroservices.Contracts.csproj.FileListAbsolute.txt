@@ -10,3 +10,4 @@ G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Contracts\obj\Debu
 G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Contracts\obj\Debug\net8.0\refint\ToDoListMicroservices.Contracts.dll
 G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Contracts.pdb
 G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Contracts\obj\Debug\net8.0\ref\ToDoListMicroservices.Contracts.dll
+G:\DotNetProjects\ToDoListMicroservices\ToDoListMicroservices.Contracts\obj\Debug\net8.0\ToDoListMicroservices.Contracts.csproj.AssemblyReference.cache

@@ -4,6 +4,34 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
       - ASPNETCORE_HTTPS_PORTS=8081
+      - MongoConnection__ConnectionString=mongodb://localhost:27017
+      - MongoConnection__Database=TDM
+      - MongoConnection__RabbitMessagesCollectionName=RabbitMessages
+      - MongoConnection__MetricsCollectionName=Metrics
+      - ConnectionStrings__ANGenericDb=Server=localhost;Port=5433;Database=TDMGenericDb;User Id=postgres;Password=1111;
+      - Logging__LogLevel__Default=Information
+      - Logging__LogLevel__Microsoft.AspNetCore=Warning
+      - Serilog__MinimumLevel__Default=Information
+      - Serilog__MinimumLevel__Override__Microsoft.AspNetCore=Warning
+      - Serilog__WriteTo__0__Name=Console
+      - Serilog__WriteTo__1__Name=ElasticSearch
+      - Serilog__WriteTo__1__Args__nodeUris=http://localhost:9200
+      - Serilog__WriteTo__1__Args__autoRegisterTemplate=true
+      - Serilog__WriteTo__1__Args__indexFormat=asp_net_network_system-{0:yyyy.MM.dd}
+      - Serilog__WriteTo__1__Args__inlineFields=true
+      - Serilog__WriteTo__1__Args__numberOfReplicas=2
+      - Serilog__WriteTo__1__Args__numberOfShards=2
+      - Serilog__Enrich__0=FromLogContext
+      - Serilog__Enrich__1=WithMachineName
+      - Serilog__Enrich__2=WithThreadId
+      - Serilog__Properties__Application=ToDoListMicroservices
+      - MessageBroker__AmqpLink=amqps://dgpswpjt:tbQvnOh93n-sdqDMjXAjfB53OiShmOka@chimpanzee.rmq.cloudamqp.com/dgpswpjt
+      - MessageBroker__QueueName=User
+      - Jwt__Secret=secretsecret123456
+      - Jwt__ValidIssuers__0=https://localhost:7028
+      - Jwt__ValidAudiences__0=https://localhost:7028
+      - Jwt__Expire=3600
+      - Jwt__RefreshTokenExpire=20160
     ports:
       - "8080"
       - "8081"
@@ -22,3 +50,57 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+  
+  redis:
+    ports:
+      - 6379:6379
+    volumes:
+      - redis-data:/data
+
+  mongodb:
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data:/data/db
+      
+  elasticsearch:
+    container_name: elasticsearch
+    ports:
+      - 9200:9200
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    environment:
+      - xpack.monitoring.enabled=true
+      - xpack.watcher.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    networks:
+      - elastic
+      
+  kibana:
+    container_name: kibana
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+    environment:
+      - ELASTICSEARCH_URL=http://localhost:9200
+    networks:
+      - elastic
+      
+  prometheus:
+    restart: always
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      
+  grafana:
+    restart: always
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana-storage:/var/lib/grafana

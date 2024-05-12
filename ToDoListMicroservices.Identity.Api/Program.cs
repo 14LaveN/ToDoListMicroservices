@@ -66,7 +66,9 @@ builder.Services.AddMediatr();
 
 builder.Services.AddDatabase(builder.Configuration);
 
-builder.Services.AddSwachbackleService(Assembly.GetExecutingAssembly(), Assembly.GetExecutingAssembly().GetName().Name);
+builder.Services.AddSwachbackleService(
+    Assembly.GetExecutingAssembly(),
+    Assembly.GetExecutingAssembly().GetName().Name!);
 
 builder.Services.AddApplication();
 

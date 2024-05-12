@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Quartz;
 using Quartz.Spi;
+using ToDoListMicroservices.BackgroundTasks.QuartZ.Jobs;
 
 namespace ToDoListMicroservices.BackgroundTasks;
 
@@ -20,6 +21,7 @@ public static class DependencyInjection
     /// <param name="services">The service collection.</param>
     /// <param name="configuration">The configuration.</param>
     /// <returns>The same service collection.</returns>
+    [Obsolete("Obsolete")]
     public static IServiceCollection AddBackgroundTasks(
         this IServiceCollection services,
         IConfiguration configuration)
@@ -38,6 +40,24 @@ public static class DependencyInjection
         
         services.AddQuartz(configure =>
         {
+            #region BaseDbJobSetup
+
+            var jobKey = new JobKey(
+                nameof(BaseDbJob));
+
+            configure
+                .AddJob<BaseDbJob>(jobKey)
+                .AddTrigger(
+                    trigger => trigger
+                        .ForJob(jobKey)
+                        .WithSimpleSchedule(schedule =>
+                            schedule
+                                .WithIntervalInSeconds(120)
+                                .RepeatForever()));
+
+
+            #endregion
+            
             configure.UseMicrosoftDependencyInjectionJobFactory();
         });
 
@@ -55,10 +75,6 @@ public static class DependencyInjection
         services.AddTransient<IJobFactory, QuartzJobFactory>();
         
         services.AddScoped<UserDbScheduler>();
-        //services.AddSingleton<Firebase.Storage.FirebaseStorage>();
-        
-        //var scheduler = new UserDbScheduler();
-        //scheduler.Start(services);
         
         return services;
     }

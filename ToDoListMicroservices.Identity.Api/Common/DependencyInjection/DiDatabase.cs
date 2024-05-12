@@ -28,12 +28,12 @@ public static class DiDatabase
         services.AddMongoDatabase(configuration);
         services.AddNotificationsDatabase();
         
-        string pathToFirebaseConfig = @"G:\DotNetProjects\ToDoListMicroservices\firebase.json";
-
-        FirebaseApp.Create(new AppOptions
-        {
-            Credential = GoogleCredential.FromFile(pathToFirebaseConfig),
-        });
+        //TODO string pathToFirebaseConfig = @"G:\DotNetProjects\ToDoListMicroservices\firebase.json";
+//TODO 
+        //TODO FirebaseApp.Create(new AppOptions
+        //TODO {
+        //TODO     Credential = GoogleCredential.FromFile(pathToFirebaseConfig),
+        //TODO });
         
         return services;
     }

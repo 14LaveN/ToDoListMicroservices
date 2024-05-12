@@ -200,7 +200,7 @@ public class BaseDbContext
         {
             List<EntityEntry<User>> aggregateRoots = ChangeTracker
                 .Entries<User>()
-                .Where(entityEntry => entityEntry.Entity.DomainEvents.Any())
+                .Where(entityEntry => entityEntry.Entity.DomainEvents.Count is not 0)
                 .ToList();
 
             List<IDomainEvent> domainEvents = aggregateRoots
@@ -222,7 +222,7 @@ public class BaseDbContext
         {
             List<EntityEntry<AggregateRoot>> aggregateRoots = ChangeTracker
                 .Entries<AggregateRoot>()
-                .Where(entityEntry => entityEntry.Entity.DomainEvents.Any())
+                .Where(entityEntry => entityEntry.Entity.DomainEvents.Count is not 0)
                 .ToList();
             
             List<IDomainEvent> domainEvents = aggregateRoots
