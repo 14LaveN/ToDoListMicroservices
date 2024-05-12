@@ -12,6 +12,7 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using ToDoListMicroservices.RabbitMq.Abstractions;
 
 namespace ToDoListMicroservices.BackgroundTasks.Tasks;
 
@@ -89,7 +90,7 @@ internal  sealed class IntegrationEventConsumerBackgroundService : IHostedServic
     /// <returns>The completed taskEntity.</returns>
     private void OnIntegrationEventReceived(object sender, BasicDeliverEventArgs eventArgs)
     {
-        string body = Encoding.UTF8.GetString(eventArgs.Body.Span);
+        string body = Encoding.UTF8.GetString(eventArgs.Body.ToArray());
         
         var integrationEvent = JsonConvert.DeserializeObject<IIntegrationEvent>(body, new JsonSerializerSettings
         {

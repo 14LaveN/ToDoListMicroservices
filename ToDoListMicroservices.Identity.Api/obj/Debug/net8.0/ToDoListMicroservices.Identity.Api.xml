@@ -35,6 +35,14 @@
             <param name="configuration">The configuration.</param>
             <returns>The same service collection.</returns>
         </member>
+        <member name="M:ToDoListMicroservices.Identity.Api.Common.DependencyInjection.DiMetrics.AddMetricsOpenTelemetry(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Logging.ILoggingBuilder)">
+            <summary>
+            Registers the necessary services with the DI framework.
+            </summary>
+            <param name="services">The service collection.</param>
+            <param name="loggingBuilder">The logging builder.</param>
+            <returns>The same service collection.</returns>
+        </member>
         <member name="T:ToDoListMicroservices.Identity.Api.Controllers.V1.UsersController">
             <summary>
             Represents the users controller class.

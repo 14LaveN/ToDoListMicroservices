@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ToDoListMicroservices.TaskEntity.Database")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ToDoListMicroservices.Task.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ec4de538ca8fed14ff41f7ba047bf06d7f6024a")]
-[assembly: System.Reflection.AssemblyProductAttribute("ToDoListMicroservices.TaskEntity.Database")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ToDoListMicroservices.TaskEntity.Database")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8ed5565a20c76fdb5921f1d6656e8bb6a4a6317")]
+[assembly: System.Reflection.AssemblyProductAttribute("ToDoListMicroservices.Task.Database")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ToDoListMicroservices.Task.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

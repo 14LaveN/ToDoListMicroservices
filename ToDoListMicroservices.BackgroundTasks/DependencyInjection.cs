@@ -6,6 +6,7 @@ using ToDoListMicroservices.BackgroundTasks.Services;
 using ToDoListMicroservices.BackgroundTasks.Settings;
 using ToDoListMicroservices.BackgroundTasks.Tasks;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Quartz;
 using Quartz.Spi;
 
@@ -43,6 +44,12 @@ public static class DependencyInjection
         services.AddQuartzHostedService(options =>
         {
             options.WaitForJobsToComplete = true;
+        });
+
+        services.Configure<HostOptions>(options =>
+        {
+            options.ServicesStartConcurrently = true;
+            options.ServicesStopConcurrently = true;
         });
         
         services.AddTransient<IJobFactory, QuartzJobFactory>();

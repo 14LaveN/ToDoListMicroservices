@@ -20,6 +20,6 @@ public static class MigrationExtensions
         var dbContext = scope.ServiceProvider
             .GetRequiredService<BaseDbContext>();
 
-        dbContext.Database.Migrate();
+        dbContext.Database.MigrateAsync();
     }
 }

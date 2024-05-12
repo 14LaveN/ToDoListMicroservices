@@ -41,7 +41,7 @@ internal sealed class CreateReportBackgroundService : BackgroundService
         {
             _logger.LogDebug("CreateReportBackgroundService background task is doing background work.");
 
-            await ProduceReportsAsync(stoppingToken);
+            //TODO await ProduceReportsAsync(stoppingToken);
 
             await System.Threading.Tasks.Task.Delay(TimeSpan.FromHours(24), stoppingToken);
         }

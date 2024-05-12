@@ -26,6 +26,10 @@ public static class DependencyInjection
         }
         
         services.Configure<MongoSettings>(configuration.GetSection(MongoSettings.MongoSettingsKey));
+        
+        services.AddOptions<MongoSettings>()
+            .BindConfiguration(MongoSettings.MongoSettingsKey)
+            .ValidateOnStart();
 
         services.AddSingleton<IMetricsRepository, MetricsRepository>();
         services.AddSingleton<IMongoRepository<RabbitMessage>, RabbitMessagesRepository>();

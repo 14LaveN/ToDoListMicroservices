@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace ToDoListMicroservices.Application.Core.Settings;
 
 /// <summary>
@@ -13,20 +15,24 @@ public sealed class MongoSettings
     /// <summary>
     /// Gets or sets connection string.
     /// </summary>
-    public string ConnectionString { get; set; } = null!;
+    [Required, Url]
+    public string ConnectionString { get; init; } = null!;
 
     /// <summary>
     /// Gets or sets database name.
     /// </summary>
-    public string Database { get; set; } = null!;
+    [Required]
+    public string Database { get; init; } = null!;
 
     /// <summary>
     /// Gets or sets Rabbit Messages Collection Name.
     /// </summary>
-    public string RabbitMessagesCollectionName { get; set; } = null!;
+    [Required]
+    public string RabbitMessagesCollectionName { get; init; } = null!;
 
     /// <summary>
     /// Gets or sets Metrics Collection Name.
     /// </summary>
-    public string MetricsCollectionName { get; set; } = null!;
+    [Required]
+    public string MetricsCollectionName { get; init; } = null!;
 }

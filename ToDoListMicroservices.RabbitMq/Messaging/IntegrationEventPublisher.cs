@@ -3,7 +3,12 @@ using System.Text.Json;
 using ToDoListMicroservices.Application.Core.Abstractions.Messaging;
 using ToDoListMicroservices.RabbitMq.Messaging.Settings;
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
+using MongoDB.Bson.IO;
 using RabbitMQ.Client;
+using ToDoListMicroservices.RabbitMq.Abstractions;
+using ToDoListMicroservices.RabbitMq.Messaging.User.Events.PasswordChanged;
+using ToDoListMicroservices.RabbitMq.Messaging.User.Events.UserCreated;
 
 namespace ToDoListMicroservices.RabbitMq.Messaging;
 
@@ -45,7 +50,24 @@ public sealed class IntegrationEventPublisher(IOptions<MessageBrokerSettings> me
             exchange: _messageBrokerSettings.QueueName + "Exchange",
             routingKey: _messageBrokerSettings.QueueName);
 
-        string payload = JsonSerializer.Serialize(integrationEvent, typeof(IIntegrationEvent));
+        IIntegrationEvent concreteIntegrationEvent;
+        switch (integrationEvent.GetType().Name)
+        {
+            case nameof(UserCreatedIntegrationEvent):
+                concreteIntegrationEvent = (UserCreatedIntegrationEvent)integrationEvent;
+                break;
+            case nameof(UserPasswordChangedIntegrationEvent):
+                concreteIntegrationEvent = (UserPasswordChangedIntegrationEvent)integrationEvent;
+                break;
+            default:
+                concreteIntegrationEvent = integrationEvent;
+                break;
+        }
+        
+        string payload = JsonSerializer.Serialize(concreteIntegrationEvent, new JsonSerializerOptions()
+        {
+            Converters = { new IntegrationEventJsonConverter() }
+        });
 
         var body = Encoding.UTF8.GetBytes(payload);
 

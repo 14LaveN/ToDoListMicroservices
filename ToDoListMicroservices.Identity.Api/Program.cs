@@ -11,9 +11,14 @@ using ToDoListMicroservices.RabbitMq.Messaging.Settings;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.ResponseCompression;
+using OpenTelemetry;
+using OpenTelemetry.Logs;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Trace;
 using Prometheus;
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.HttpRequestDurations;
+using ToDoListMicroservices.Application.Core.Settings;
 using ToDoListMicroservices.Database.Common;
 using ToDoListMicroservices.Identity.Application;
 using ToDoListMicroservices.Identity.Domain.Entities;
@@ -23,6 +28,9 @@ using ToDoListMicroservices.Identity.Domain.Entities;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+// Запуск OpenTelemetry
+builder.Services.AddMetricsOpenTelemetry(builder.Logging);
 
 builder.Services.AddResponseCompression(options =>
 {
@@ -114,7 +122,6 @@ UseCustomMiddlewares();
 
 
 app.Run();
-return;
 
 #endregion
 
@@ -133,7 +140,7 @@ void UseMetrics()
 {
     if (app is null)
         throw new ArgumentException();
-
+    
     app.UseMetricServer();
     app.UseHttpMetrics();
     app.UsePrometheusServer();

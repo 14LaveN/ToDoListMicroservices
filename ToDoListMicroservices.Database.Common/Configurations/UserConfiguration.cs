@@ -1,9 +1,9 @@
-﻿using ToDoListMicroservices.Domain.Common.ValueObjects;
-using ToDoListMicroservices.Identity.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using ToDoListMicroservices.Domain.Common.ValueObjects;
+using ToDoListMicroservices.Identity.Domain.Entities;
 
-namespace ToDoListMicroservices.Database.Common.Configurations;
+namespace ToDoListMicroservices.Database.Common;
 
 /// <summary>
 /// Represents the configuration for the <see cref="User"/> entity.

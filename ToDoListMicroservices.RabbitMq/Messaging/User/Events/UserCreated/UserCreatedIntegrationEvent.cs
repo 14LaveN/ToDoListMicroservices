@@ -14,10 +14,11 @@ public sealed class UserCreatedIntegrationEvent : IIntegrationEvent
     /// Initializes a new instance of the <see cref="UserCreatedIntegrationEvent"/> class.
     /// </summary>
     /// <param name="userCreatedDomainEvent">The user created domain event.</param>
-    internal UserCreatedIntegrationEvent(UserCreatedDomainEvent userCreatedDomainEvent) => UserId = userCreatedDomainEvent.User.Id;
+    internal UserCreatedIntegrationEvent(UserCreatedDomainEvent userCreatedDomainEvent) => 
+        UserId = userCreatedDomainEvent.User.Id;
         
     [JsonConstructor]
-    private UserCreatedIntegrationEvent(Guid userId) => UserId = userId;
+    public UserCreatedIntegrationEvent(Guid userId) => UserId = userId;
 
     /// <summary>
     /// Gets the user identifier.
